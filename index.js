@@ -18,10 +18,6 @@ const credentials = require('./escritacontabilidade.json')
 const docId = '1cC7k109rETPwcsm5BozIBeGxzcLJDmplpOUxsZOqIyk'
 const worksheetIndex = 0
 
-const SENDGRID_API_KEY = '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'
-
-
-
 app.set('view engine', 'ejs')
 app.set('views', path.resolve(__dirname, 'views'))
 app.use(bodyParser.urlencoded({
@@ -56,12 +52,12 @@ app.post('/', async (request, response) => {
 
         if (request.body.issueType === 'Critico') {
             sgMail.setApiKey(SENDGRID_API_KEY);
-            const msg = {
+            const msg = {   
                 to: 'blogdomarcio@live.com',
                 from: 'blogdomarcio@live.com',
                 subject: 'Bug Critico Repotado',
-                text: `O ${request.body.nome} reportou um problema `,
-                html: `<strong> O ${request.body.nome} reportou um problema </strong>`,
+                text: 'BUG REPORTADO',
+                html: '<strong> O ${request.body.nome} reportou um problema </strong>',
             };
             await sgMail.send(msg);
         }
