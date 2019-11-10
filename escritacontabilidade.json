@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "escritacontabilidade",
+  "private_key_id": "c41b13bde612e9dbc53d7dbbf01104d43b849d75",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCyP16tY7c3gvUs\ns73zXrYYACww0RddfQsPB2pBXIuIavwrTb0faMAXXg0JIan7wmSgiNqJmtqmXu82\ndFCEtP+zIQCbb3n6a/WoEKwh8nnHKaM1JbKhiKTGs+DYLc0Kq1mrO28dg/ePjeXU\nVz+91403oeoqhVMCxDqG7xuljq2EdbgLFxjrBMh2JqbtPSEBsVHNDFi0IikWxksM\nGIR/POIvJy1iwDhZoRITQjLqER7Tw6iRBFh6qfhqbviGPDcgT4UYpZiTjvWBoPjJ\n95AS+7K2f7KSz8qxlcm9EAVk+LdlU+FVncfoYqphXNizzvxM8LF2rZ8PmcQ9SAk2\n7K5x4eHrAgMBAAECggEAAlbxwgN4tuuEbboUunUxGCp5NtFNN9S0e8t6LncrIKeb\nzNGhYa+pHpxwuNezskMiUvTeqfKPlB0vulgmx5vybedtAv6RX2hSrpm3V7rOyRMl\n0SsHuav8bEK0X2fMk5GnsCdFqK5rifEtXh+lsYT1zfusbaOxCpWOB6t//S3xRXoF\n1k3kQhmdy70S+MxMgJn7hPYnUv2wlcszAxbRne6NHm06SbLmT500bzEkHE1biLXl\n8Ory4CXF4oDaBL0BdMhXHy2VFNZ/rotDqmGebI/JGG2cNc1GCc/9D2O0Q5D5kQcy\nygRwyBoFmZYe0TXzJx+2GGdEsUI14zJCy3WYI5kM3QKBgQDaxfG1EmeP0HMS/ig+\nn3sE2qy5GMIy1r2kXsGTgfICGaTf2mFcJM7gyhChvKL/g635UsbacLd8AebWYtqB\n2aIxfI2l2t1v7VNOVbvwI0hAK+woCOWIGvTwlfhgZqpRVaWdwvDU5tm9RoZ4MLs/\nL2WgZBZUGBma9Zm9UjIlSDsBZwKBgQDQlBKNIy0QS2CfSWGxvnvnENZ4ejNMrXWZ\nnzfjXj9g/45jEKHypCLPNFVWcUe4qzSmL3hvx2/5OmSouiA4Y7Sxnxwmf165XdXK\nV84VSoTnZ3I3c5+0qvzqXEWbiFg3MdBT76kG9lgYhZ8cpn08e7/tJGXvNxWpMREb\nkcLyRtl03QKBgCY3HZm7tUtx5igTLYSC50JZ0IIkyQeIa2gjBT13HYcwY5SW2Rr3\ncwvhQDaAdRidL+61fvb5aZPH4ULh0bmNAsASOcwXB0dd9YdhgorYHu7WvVHg+/di\nfhbom5J7XJUImP2N5/PIv5BImYS1PoAzD1WNJjlaXF6tOEXR7eCFVYlRAoGAT5WQ\nFoYrdaItNdncCuPxhtLn4oRN+p3c10bnHjwh1rLr82SvRlPWbFU9koQap527swU9\n4PiqAuCC89ZA4QM6OOPK6+2BiR0Cq/ggzALo/xp7fCkD8P2lDw8yCAxYDIdXRA+X\n4O4x4vlpIpdsBZ36N1PCCSpte2cbbfeJ+MOLyYkCgYBhG+qr6xeBi1E+HCRxPhv9\n/3G1/7JRs9qVYr2nkgUz23/gQN0lWyQ3gfgtUkVvwL3NnQBDXvtNizX+Se97QDYH\npwk9IgcRFX5gxThfV522QJuukZ7lEt+DBF/B5+bRxwkYgEa6qO0zJlo3hSY7pS0y\nUEtC/kiU/dMEoKEovvGfQg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "escritacontabilidade@escritacontabilidade.iam.gserviceaccount.com",
+  "client_id": "111286607235525365104",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/escritacontabilidade%40escritacontabilidade.iam.gserviceaccount.com"
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FUll Stack</title>
+
+
+    <script>
+    
+    document.onreadystatechange = () => {
+        if(document.readyState === 'interactive'){
+          
+            document.getElementById('userAgent').value = window.navigator.userAgent
+            document.getElementById('userDate').value = new Date()
+
+    
+        }
+    }
+    
+    
+    </script>
+
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h2>Cadastro</h1>
+
+            <br>
+
+            <form  method="POST">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" name="nome" id="nome" />
+
+                <label for="nome">Email</label>
+                <input type="text" class="form-control" name="email" id="email" />
+
+
+                <div class="form-group">
+                  <label for="">Classificação</label>
+                  <select class="form-control" name="issueType" id="issueType">
+                    <option value="">Selecione</option>
+                    <option value="Critico">Critico</option>
+                    <option value="Bug">Bug</option>
+                    <option value="Melhoria">Melhoria</option>
+                  </select>
+                </div>
+
+                <input type="hidden" name="userAgent" id="userAgent" />
+                
+                <input type="hidden" name="userDate" id="userDate" />
+
+
+                <button type="submit">Enviar
+                </button>
+
+            </form>
+
+    </div>
+
+ 
+
+</body>
+
+</html>

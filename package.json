@@ -1,0 +1,26 @@
+{
+  "name": "bug-tracker",
+  "version": "1.0.0",
+  "description": "Aplicação desenvolvida durante o Fullstack Lab - DevPleno",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blogdomarcio/bug-tracker.git"
+  },
+  "author": "Claudio Marcio @blogdomarcio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blogdomarcio/bug-tracker/issues"
+  },
+  "homepage": "https://github.com/blogdomarcio/bug-tracker#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "google-spreadsheet": "^2.0.8"
+  }
+}
