@@ -51,7 +51,7 @@ app.post('/', async (request, response) => {
         // se for critico
 
         if (request.body.issueType === 'Critico') {
-            sgMail.setApiKey(SENDGRID_API_KEY);
+            sgMail.setApiKey(process.env.SENDGRID_API_KEY);
             const msg = {   
                 to: 'blogdomarcio@live.com',
                 from: 'blogdomarcio@live.com',
