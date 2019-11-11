@@ -11,5 +11,8 @@
             "src" : "/(.*)",
             "dest" : "/index.js"
         }
-    ]
+    ],
+    "env": {
+        "SENDGRID_API_KEY": "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"
+      }
 }

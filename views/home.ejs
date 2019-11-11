@@ -32,6 +32,15 @@
 
 <body>
 
+    <div class="jumbotron">
+        <h1 class="display-3">Bug Tracker</h1>
+        <p class="lead">Sistema para Cadastro de Erros (Projeto desenvolvido na semama FullStack DevPleno)</p>
+        <hr class="my-2">
+        <!--<p>Erro Reportado com sucesso</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Retornar ao Cadastro</a>
+        </p>-->
+    </div>
 
     <div class="container">
 
@@ -57,16 +66,46 @@
                   </select>
                 </div>
 
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Como reproduzir o Erro</label>
+                    <input type="text" class="form-control" id="erro" name="erro" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">Informe detalhes mais especifícos</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Saída Esperada</label>
+                    <input type="text" class="form-control" id="saida" name="saida" aria-describedby="emailHelp">
+                     
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Saída Recebida</label>
+                    <input type="text" class="form-control" id="recebida" name="recebida" aria-describedby="emailHelp">
+                    
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Observações</label>
+                    <input type="text" class="form-control" id="obs" name="obs" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">Deixe Sugestões/Duvidas para melhora no sistema</small>
+                  </div>
+
+
                 <input type="hidden" name="userAgent" id="userAgent" />
                 
                 <input type="hidden" name="userDate" id="userDate" />
 
 
-                <button type="submit">Enviar
+                <button type="submit">Enviar Ticket
                 </button>
 
             </form>
 
+            <hr class="my-2">
+
+            <br><hr class="my-2">
+
+            <blockquote>Desenvolvimento: <a href="http://www.blogdomarcio.com.br" target="_blank">@blogdomarcio</a></blockquote>
     </div>
 
  

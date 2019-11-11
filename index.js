@@ -13,6 +13,8 @@ const GoogleSpreadsheet = require('google-spreadsheet')
 
 const credentials = require('./escritacontabilidade.json')
 
+
+
 // configurações
 
 const docId = '1cC7k109rETPwcsm5BozIBeGxzcLJDmplpOUxsZOqIyk'
@@ -27,6 +29,18 @@ app.use(bodyParser.urlencoded({
 
 app.get('/', (request, response) => {
     response.render('home')
+})
+
+app.get('/sefaz', (request, response) => {
+    response.render('sefaz')
+})
+
+app.post('/sefaz', async (request, response) => {
+
+    console.log(request.body.CGC)
+    response.send('Sucesso')
+
+
 })
 
 app.post('/', async (request, response) => {
@@ -46,22 +60,28 @@ app.post('/', async (request, response) => {
             userAgent: request.body.userAgent,
             userDate: request.body.userDate,
             issueType: request.body.issueType,
+            erro: request.body.erro,
+            saida: request.body.saida,
+            recebida: request.body.recebida,
+            obs: request.body.obs,
             source: request.query.source || 'direct'
         })
         // se for critico
 
-        if (request.body.issueType === 'Critico') {
-            sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-            const msg = {   
-                to: 'blogdomarcio@live.com',
-                from: 'blogdomarcio@live.com',
-                subject: 'Bug Critico Repotado',
-                text: 'BUG REPORTADO',
-                html: '<strong> O ${request.body.nome} reportou um problema </strong>',
-            };
-            await sgMail.send(msg);
-        }
-        response.send('Sucesso')
+        // if (request.body.issueType === 'Critico') {
+        //     sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+        //     const msg = {
+        //         to: 'blogdomarcio@live.com',
+        //         from: 'blogdomarcio@live.com',
+        //         subject: 'Bug Critico Repotado',
+        //         text: 'BUG REPORTADO',
+        //         html: '<strong> O ${request.body.nome} reportou um problema </strong>',
+        //     };
+        //     await sgMail.send(msg);
+        // }
+        // response.send('Sucesso')
+
+        response.render('sucesso')
 
     } catch (err) {
         response.send('Erro ao enviar formulário')
