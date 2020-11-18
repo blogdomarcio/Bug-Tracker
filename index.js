@@ -9,7 +9,7 @@ const { promisify } = require('util')
 
 const sgMail = require('@sendgrid/mail')
 
-const GoogleSpreadsheet = require('google-spreadsheet')
+const { GoogleSpreadsheet } = require('google-spreadsheet')
 
 const credentials = require('./escritacontabilidade.json')
 
@@ -48,13 +48,27 @@ app.post('/', async (request, response) => {
     try {
         const doc = new GoogleSpreadsheet(docId)
 
-        await promisify(doc.useServiceAccountAuth)(credentials)
+        // await promisify(doc.useServiceAccountAuth)(credentials)
 
-        const info = await promisify(doc.getInfo)()
+        await doc.useServiceAccountAuth(credentials)
 
-        const worksheet = info.worksheets[worksheetIndex]
+        // const info = await promisify(doc.getInfo)()
 
-        await promisify(worksheet.addRow)({
+        const info = await doc.loadInfo()
+
+        // console.log(info)
+
+
+
+
+        // const worksheet = info.sheetsByIndex[worksheetIndex]
+
+        const sheet = doc.sheetsByIndex[0]
+
+        // console.log(sheet)
+
+
+        await sheet.addRow({
             nome: request.body.nome,
             email: request.body.email,
             userAgent: request.body.userAgent,
